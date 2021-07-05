@@ -3,7 +3,7 @@
         "packages/tora-check"
     ],
     "npmClient": "yarn",
-    "version": "0.3.1",
+    "version": "0.3.2",
     "useWorkspaces": true,
     "command": {
         "publish": {
