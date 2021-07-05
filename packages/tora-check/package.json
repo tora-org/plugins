@@ -1,5 +1,5 @@
 {
-    "name": "tora-check",
+    "name": "@tora/check",
     "version": "0.2.0",
     "description": "Configuration check for Tora.",
     "main": "./lib/index.js",
@@ -28,7 +28,7 @@
         "url": "git+https://github.com/isatiso/tora-check.git"
     },
     "author": "",
-    "license": "ISC",
+    "license": "MIT",
     "bugs": {
         "url": "https://github.com/isatiso/tora-check/issues"
     },
