@@ -44,5 +44,6 @@
         "ts-node": "^9.1.1",
         "typescript": "^4.2.4",
         "typescript-json-schema": "^0.50.0"
-    }
+    },
+    "gitHead": "8985eddfaeadbf60677fd42066675734d2ef5d08"
 }
