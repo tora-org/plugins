@@ -8,7 +8,7 @@ const pkg = require('../package.json')
 const { generateSchema } = require('../lib')
 
 program.version(pkg.version)
-    .option('-t, --typename <typename>', '需要生成 Schema 的类型名称', 'global.ToraConfigSchema')
+    .option('-t, --typename <typename>', '需要生成 Schema 的类型名称', 'ToraConfigSchema')
     .option('-o, --output <filepath>', '输出文件位置', 'schema/config-schema.json')
     .parse(process.argv)
 

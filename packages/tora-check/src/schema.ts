@@ -1,7 +1,7 @@
 import Ajv, { ValidateFunction } from 'ajv'
 import fs from 'fs'
 import yaml from 'js-yaml'
-import path, { dirname } from 'path'
+import path from 'path'
 import process from 'process'
 import { generateSchema as _generateSchema, programFromConfig } from 'typescript-json-schema'
 import { CheckOptions, SchemaOptions } from './types'
@@ -11,7 +11,7 @@ export function generateSchema(options: SchemaOptions) {
     const output = options.output
     const pg = programFromConfig('tsconfig.json')
     const schema = _generateSchema(pg, typename, { required: true })
-    fs.mkdirSync(dirname(output), { recursive: true })
+    fs.mkdirSync(path.dirname(output), { recursive: true })
     if (schema) {
         fs.writeFileSync(output, JSON.stringify(schema, null, 4))
     }
@@ -53,7 +53,6 @@ export function loadConfig(file_path: string) {
 }
 
 export function checkSingleConfig(file_path: string, validator: ValidateFunction) {
-    var _a
     const file_data = loadConfig(file_path)
     if (!validator(file_data)) {
         console.error('Config File Check Failed:')

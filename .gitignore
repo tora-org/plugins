@@ -1,12 +1,11 @@
 .idea/
 **/node_modules/
 **/out
-**/lib
 **/build
 **/dist
-src/bak
-src/test.*
-lib/
+**/lib
+
+**/src/test.*
 
 .DS_Store
 package-lock.json

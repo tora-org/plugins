@@ -1,49 +1,51 @@
 {
-    "name": "@tora/tora-check",
-    "version": "0.0.1",
-    "description": "Publish utils.",
+    "name": "tora-check",
+    "version": "0.0.5",
+    "description": "Configuration check for Tora.",
     "main": "./lib/index.js",
     "types": "./lib/index.d.ts",
     "module": "./lib/index.esm.js",
-    "scripts": {
-        "build": "rm -rf lib && rollup -c"
+    "bin": {
+        "tora-check": "bin/tora-check.js",
+        "tora-schema": "bin/tora-schema.js"
     },
     "files": [
         "lib"
     ],
-    "bin": {
-        "tsb-update": "bin/tsb-update.sh"
-    },
-    "directories": {
-        "lib": "lib"
+    "keywords": [
+        "tora",
+        "config",
+        "di",
+        "typescript"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/tora-org/plugins.git"
+        "url": "git+https://github.com/isatiso/tora-check.git"
     },
-    "keywords": [
-        "deploy",
-        "tsb",
-        "formovie"
-    ],
     "author": "",
     "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/isatiso/tora-check/issues"
+    },
+    "homepage": "https://github.com/isatiso/tora-check#readme",
     "dependencies": {
-        "@rollup/plugin-json": "^4.1.0",
-        "@types/js-yaml": "^4.0.1",
-        "@types/koa": "^2.13.1",
-        "@types/node": "^14.14.41",
-        "ajv": "^8.1.0",
-        "builtin-modules": "^3.2.0",
+        "@types/js-yaml": "^4.0.0",
+        "@types/node": "^14.14.37",
+        "ajv": "^8.0.1",
         "commander": "^7.2.0",
-        "js-yaml": "^4.1.0",
-        "npm-check-updates": "^11.5.1",
-        "rollup": "^2.45.2",
+        "js-yaml": "^4.0.0",
+        "typescript-json-schema": "^0.50.0"
+    },
+    "devDependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "builtin-modules": "^3.2.0",
+        "rollup": "^2.43.1",
         "rollup-plugin-dts": "^3.0.1",
-        "rollup-plugin-node-externals": "^2.2.0",
         "rollup-plugin-typescript2": "^0.30.0",
         "ts-node": "^9.1.1",
-        "typescript": "^4.2.4",
-        "typescript-json-schema": "^0.50.0"
+        "typescript": "^4.2.3"
     }
 }
