@@ -1,0 +1,12 @@
+{
+    "name": "@tora/plugins",
+    "private": true,
+    "devDependencies": {
+        "lerna": "^4.0.0",
+        "tora": "^0.2.21"
+    },
+    "scripts": {},
+    "workspaces": [
+        "packages/*"
+    ]
+}

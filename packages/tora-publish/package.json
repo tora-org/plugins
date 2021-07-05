@@ -1,0 +1,48 @@
+{
+    "name": "@tora/tora-publish",
+    "version": "0.0.1",
+    "description": "Publish utils.",
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts",
+    "module": "./lib/index.esm.js",
+    "scripts": {
+        "build": "rm -rf lib && rollup -c"
+    },
+    "files": [
+        "lib"
+    ],
+    "bin": {
+        "tsb-update": "bin/tsb-update.sh"
+    },
+    "directories": {
+        "lib": "lib"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tora-org/plugins.git"
+    },
+    "keywords": [
+        "deploy",
+        "tsb",
+        "formovie"
+    ],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@rollup/plugin-json": "^4.1.0",
+        "@types/koa": "^2.13.1",
+        "@types/node": "^14.14.41",
+        "ajv": "^8.1.0",
+        "builtin-modules": "^3.2.0",
+        "commander": "^7.2.0",
+        "js-yaml": "^4.1.0",
+        "npm-check-updates": "^11.5.1",
+        "rollup": "^2.45.2",
+        "rollup-plugin-dts": "^3.0.1",
+        "rollup-plugin-node-externals": "^2.2.0",
+        "rollup-plugin-typescript2": "^0.30.0",
+        "ts-node": "^9.1.1",
+        "typescript": "^4.2.4",
+        "typescript-json-schema": "^0.50.0"
+    }
+}

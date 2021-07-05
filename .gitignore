@@ -1,0 +1,12 @@
+.idea/
+**/node_modules/
+**/out
+**/lib
+**/build
+**/dist
+src/bak
+src/test.*
+lib/
+
+.DS_Store
+package-lock.json
