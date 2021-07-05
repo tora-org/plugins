@@ -10,7 +10,7 @@ export function generateSchema(options: SchemaOptions) {
     const typename = options.typename
     const output = options.output
     const pg = programFromConfig('tsconfig.json')
-    const schema = _generateSchema(pg, typename, { required: true })
+    const schema = _generateSchema(pg, typename, { required: true, ignoreErrors: true })
     fs.mkdirSync(path.dirname(output), { recursive: true })
     if (schema) {
         fs.writeFileSync(output, JSON.stringify(schema, null, 4))
