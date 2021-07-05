@@ -52,8 +52,8 @@ export function loadConfig(file_path: string) {
     }
 }
 
-export function checkSingleConfig(file_path: string, validator: ValidateFunction) {
-    const file_data = loadConfig(file_path)
+export function checkSingleConfig(file_path: string | object, validator: ValidateFunction) {
+    const file_data = typeof file_path === 'string' ? loadConfig(file_path) : file_path
     if (!validator(file_data)) {
         console.error('Config File Check Failed:')
         console.error(`    File -> ${file_path}`)
