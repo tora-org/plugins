@@ -999,10 +999,10 @@
   resolved "https://nexus.formovie.net/repository/aliyun-group/@types/http-errors/-/http-errors-1.8.0.tgz#682477dbbbd07cd032731cb3b0e7eaee3d026b69"
   integrity sha512-2aoSC4UUbHDj2uCsCxcG/vRMXey/m17bC7UwitVm5hn22nI8O8Y9iDpA76Orc+DWkQ4zZrOKEshCqR/jSuXAHA==
 
-"@types/js-yaml@^4.0.0":
-  version "4.0.0"
-  resolved "https://nexus.formovie.net/repository/aliyun-group/@types/js-yaml/-/js-yaml-4.0.0.tgz#d1a11688112091f2c711674df3a65ea2f47b5dfb"
-  integrity sha512-4vlpCM5KPCL5CfGmTbpjwVKbISRYhduEJvvUWsH5EB7QInhEj94XPZ3ts/9FPiLZFqYO0xoW4ZL8z2AabTGgJA==
+"@types/js-yaml@^4.0.1":
+  version "4.0.1"
+  resolved "https://nexus.formovie.net/repository/aliyun-group/@types/js-yaml/-/js-yaml-4.0.1.tgz#5544730b65a480b18ace6b6ce914e519cec2d43b"
+  integrity sha512-xdOvNmXmrZqqPy3kuCQ+fz6wA0xU5pji9cd1nDrflWaAWtYLLGk5ykW0H6yg5TVyehHP1pfmuuSaZkhP+kspVA==
 
 "@types/json-schema@^7.0.7":
   version "7.0.7"
@@ -1143,7 +1143,7 @@ ajv@^6.12.3:
     json-schema-traverse "^0.4.1"
     uri-js "^4.2.2"
 
-ajv@^8.0.1, ajv@^8.1.0:
+ajv@^8.1.0:
   version "8.1.0"
   resolved "https://nexus.formovie.net/repository/aliyun-group/ajv/-/ajv-8.1.0.tgz#45d5d3d36c7cdd808930cc3e603cf6200dbeb736"
   integrity sha512-B/Sk2Ix7A36fs/ZkuGLIR86EdjbgR6fsAcbx9lOP/QBSXujDNbVmIS/U4Itz5k8fPFDeVZl/zQ/gJW4Jrq6XjQ==
@@ -4870,7 +4870,7 @@ rollup-plugin-typescript2@^0.30.0:
     resolve "1.20.0"
     tslib "2.1.0"
 
-rollup@^2.43.1, rollup@^2.45.2:
+rollup@^2.45.2:
   version "2.45.2"
   resolved "https://nexus.formovie.net/repository/aliyun-group/rollup/-/rollup-2.45.2.tgz#8fb85917c9f35605720e92328f3ccbfba6f78b48"
   integrity sha512-kRRU7wXzFHUzBIv0GfoFFIN3m9oteY4uAsKllIpQDId5cfnkWF2J130l+27dzDju0E6MScKiV0ZM5Bw8m4blYQ==
@@ -5399,18 +5399,6 @@ toidentifier@1.0.0:
   version "1.0.0"
   resolved "https://nexus.formovie.net/repository/aliyun-group/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
   integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
-
-tora-check@^0.0.5:
-  version "0.0.5"
-  resolved "https://nexus.formovie.net/repository/aliyun-group/tora-check/-/tora-check-0.0.5.tgz#0e5036efe6899f2f8668f872173818b723729c59"
-  integrity sha512-f0dDBMBf3tZmkI6tZDHdV8zXPLe8LsPdLj2NsEizdzbGQ94a10fUeOUEl6s0Dx6SAqQoRS/TEsjkB8nAf9kckQ==
-  dependencies:
-    "@types/js-yaml" "^4.0.0"
-    "@types/node" "^14.14.37"
-    ajv "^8.0.1"
-    commander "^7.2.0"
-    js-yaml "^4.0.0"
-    typescript-json-schema "^0.50.0"
 
 tora@^0.2.21:
   version "0.2.21"
